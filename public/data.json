@@ -10,28 +10,23 @@
         "children": [
             {
                 "type": "link",
-                "text": "PHY S 101",
-                "url": "https://z-quizzes.github.io/physics"
+                "text": "PHY S101",
+                "url": "https://nigamsaksham.github.io/UIETScripts/ram_janma_notes_phy_s101.html"
             },
             {
                 "type": "link",
-                "text": "MTH S 101",
-                "url": "https://z-quizzes.github.io/mathematics"
+                "text": "MTH S101",
+                "url": "https://nigamsaksham.github.io/UIETScripts/mth_s101_notes.html"
             },
             {
                 "type": "link",
-                "text": "TCA S 102",
-                "url": "https://z-quizzes.github.io/tca"
+                "text": "HSS S101",
+                "url": "https://nigamsaksham.github.io/UIETScripts/hss-s101_notes.html"
             },
             {
                 "type": "link",
-                "text": "HSS S 101",
-                "url": "https://z-quizzes.github.io/hss"
-            },
-            {
-                "type": "link",
-                "text": "ISC S 101",
-                "url": "https://z-quizzes.github.io/isc"
+                "text": "ISC S101",
+                "url": "https://nigamsaksham.github.io/UIETScripts/isc-101_notes.html"
             }
         ]
     },
@@ -41,28 +36,23 @@
         "children": [
             {
                 "type": "link",
-                "text": "PHY S 102",
-                "url": "https://z-quizzes.github.io/physics"
+                "text": "PHY S102",
+                "url": "http://nigamsaksham.github.io/UIETScripts/phy-s101_notes.html"
             },
             {
                 "type": "link",
-                "text": "MTH S 102",
-                "url": "https://z-quizzes.github.io/mathematics"
+                "text": "MTH S102",
+                "url": "http://nigamsaksham.github.io/UIETScripts/mth-s102_notes.html"
             },
             {
                 "type": "link",
-                "text": "TCA S 101",
-                "url": "https://z-quizzes.github.io/tca"
+                "text": "TCA S101",
+                "url": "https://nigamsaksham.github.io/UIETScripts/tca-s101_notes_by_ramendra_sir.html"
             },
             {
                 "type": "link",
-                "text": "CHM S 101",
-                "url": "https://z-quizzes.github.io/hss"
-            },
-            {
-                "type": "link",
-                "text": "ESC S 101",
-                "url": "https://z-quizzes.github.io/isc"
+                "text": "ESC S101",
+                "url": "https://nigamsaksham.github.io/UIETScripts/esc-s101_notes.html"
             }
         ]
     }
