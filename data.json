@@ -1,0 +1,70 @@
+[
+    {
+       "type": "link",
+       "url": "https://z-quizzes.github.io",
+       "text": "Quizlet"
+    },
+    {
+        "type": "category",
+        "text": "Semester 1",
+        "children": [
+            {
+                "type": "link",
+                "text": "PHY S 101",
+                "url": "https://z-quizzes.github.io/physics"
+            },
+            {
+                "type": "link",
+                "text": "MTH S 101",
+                "url": "https://z-quizzes.github.io/mathematics"
+            },
+            {
+                "type": "link",
+                "text": "TCA S 102",
+                "url": "https://z-quizzes.github.io/tca"
+            },
+            {
+                "type": "link",
+                "text": "HSS S 101",
+                "url": "https://z-quizzes.github.io/hss"
+            },
+            {
+                "type": "link",
+                "text": "ISC S 101",
+                "url": "https://z-quizzes.github.io/isc"
+            }
+        ]
+    },
+    {
+        "type": "category",
+        "text": "Semester 2",
+        "children": [
+            {
+                "type": "link",
+                "text": "PHY S 102",
+                "url": "https://z-quizzes.github.io/physics"
+            },
+            {
+                "type": "link",
+                "text": "MTH S 102",
+                "url": "https://z-quizzes.github.io/mathematics"
+            },
+            {
+                "type": "link",
+                "text": "TCA S 101",
+                "url": "https://z-quizzes.github.io/tca"
+            },
+            {
+                "type": "link",
+                "text": "CHM S 101",
+                "url": "https://z-quizzes.github.io/hss"
+            },
+            {
+                "type": "link",
+                "text": "ESC S 101",
+                "url": "https://z-quizzes.github.io/isc"
+            }
+        ]
+    }
+   
+]
