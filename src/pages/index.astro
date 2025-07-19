@@ -1,16 +1,21 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Main from "../components/Main.svelte";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <header class="flex justify-center items-center">
+    <a href="" class="flex items-center py-2">
+      <img src="/z.svg" alt="Z-Links Logo" class="size-16" />
+      <h1 class="text-3xl text-[lavender] translate-x-[-2rem] translate-y-[-0.3rem] tracking-wide">Links</h1>
+    </a>
+  </header>
+
+  <main>
+	<div class="max-w-5xl px-8 py-2 mx-auto">
+		<Main client:load></Main>
+	</div>
+  </main>
+
+
+</Layout>
