@@ -48,7 +48,7 @@
             {#if item.type == "link"}
               <a href={item.url}>
                 <h2 class="">{item.text}</h2>
-                <h3 class="text-green-400 [text-shadow:0_0_8px_#4ade80]">Z-LINK</h3>
+                <h3 class="ml-3 text-green-400 text-sm font-semibold text-nowrap [text-shadow:0_0_8px_#4ade80]">Z-LINK</h3>
               </a>
             {:else if item.type == "category"}
               <button
