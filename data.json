@@ -10,22 +10,22 @@
         "children": [
             {
                 "type": "link",
-                "text": "PHY S101",
+                "text": "PHY-S101 Notes by Ram Janma Sir",
                 "url": "https://nigamsaksham.github.io/UIETScripts/ram_janma_notes_phy_s101.html"
             },
             {
                 "type": "link",
-                "text": "MTH S101",
+                "text": "MTH-S101 Notes by D.K. Sir",
                 "url": "https://nigamsaksham.github.io/UIETScripts/mth_s101_notes.html"
             },
             {
                 "type": "link",
-                "text": "HSS S101",
+                "text": "HSS-S101 Notes by Deepti Agarwal Ma'am",
                 "url": "https://nigamsaksham.github.io/UIETScripts/hss-s101_notes.html"
             },
             {
                 "type": "link",
-                "text": "ISC S101",
+                "text": "ISC-S101 Notes by Hrishabh Sir",
                 "url": "https://nigamsaksham.github.io/UIETScripts/isc-101_notes.html"
             }
         ]
@@ -36,22 +36,22 @@
         "children": [
             {
                 "type": "link",
-                "text": "PHY S102",
+                "text": "PHY-S102 Notes by Prabal Sir",
                 "url": "http://nigamsaksham.github.io/UIETScripts/phy-s101_notes.html"
             },
             {
                 "type": "link",
-                "text": "MTH S102",
+                "text": "MTH-S102 Notes by D.K. Sir",
                 "url": "http://nigamsaksham.github.io/UIETScripts/mth-s102_notes.html"
             },
             {
                 "type": "link",
-                "text": "TCA S101",
+                "text": "TCA-S101 Notes by Ramendra Sir",
                 "url": "https://nigamsaksham.github.io/UIETScripts/tca-s101_notes_by_ramendra_sir.html"
             },
             {
                 "type": "link",
-                "text": "ESC S101",
+                "text": "ESC-S101 Notes by Ompal Sir",
                 "url": "https://nigamsaksham.github.io/UIETScripts/esc-s101_notes.html"
             }
         ]
