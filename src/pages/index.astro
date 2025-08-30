@@ -1,21 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Main from "../components/Main.svelte";
+import LandingPage from "../components/LandingPage.svelte";
+import { getSupabase } from "../lib/supabaseSSR";
+
+export const prerender = false; 
+
+const supabase = getSupabase(Astro);
+
+const {
+  data: { user },
+} = await supabase.auth.getUser();
+
+const { data: zlinks } = await supabase
+  .from("z_link")
+  .select("*")
+  .eq("user", user?.id);
+
+console.log("from server", user);
 ---
 
 <Layout>
-  <header class="flex justify-center items-center">
-    <a href="" class="flex items-center py-2">
-      <img src="/z.svg" alt="Z-Links Logo" class="size-16" />
-      <h1 class="text-3xl text-[lavender] translate-x-[-2rem] translate-y-[-0.3rem] tracking-wide">Links</h1>
-    </a>
-  </header>
-
-  <main>
-	<div class="max-w-5xl px-8 py-2 mx-auto">
-		<Main client:load></Main>
-	</div>
-  </main>
-
-
+  {
+    user ? (
+      <main>
+        <div class="max-w-5xl px-8 py-2 mx-auto">
+          <Main client:load availableZLinks={zlinks} />
+        </div>
+      </main>
+    ) : (
+      <LandingPage client:load />
+    )
+  }
 </Layout>

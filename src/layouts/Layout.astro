@@ -1,16 +1,39 @@
 ---
-import '../styles/global.css';
----
+import "../styles/global.css";
+import LoginButton from "../components/LoginButton.svelte";
+import LoginModal from "../components/LoginModal.svelte";
+import DeleteModal from "../components/DeleteModal.svelte";
+import LoginWarning from "../components/LoginWarning.svelte";
+--- 
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/z.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Z-Links</title>
-	</head>
-	<body class="overflow-x-hidden">
-		<slot></slot>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/z.svg" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Z-Links</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      class="relative px-8 w-full max-w-5xl mx-auto grid grid-cols-[1fr_max-content_1fr] place-content-center"
+    >
+      <a
+        href="/"
+        class="col-start-2 justify-self-center flex items-center py-2"
+      >
+        <img src="/z.svg" alt="Z-Links Logo" class="size-16" />
+        <h1
+          class="text-3xl text-[lavender] translate-x-[-2rem] translate-y-[-0.3rem] tracking-wide"
+        >
+          Links
+        </h1>
+      </a>
+      <LoginButton client:load />
+    </header>
+    <LoginModal client:load />
+    <DeleteModal client:load />
+    <LoginWarning client:load />
+    <slot />
+  </body>
 </html>

@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TreeBase from "../../components/TreeBase.svelte";
+import supabase from "../../lib/supabase";
+
+export const prerender = false; // SSR this route
+
+const { id } = Astro.params;
+
+const { data, error } = await supabase.functions.invoke('fetch_tree', {
+    body: { url: id }
+});
+
+if (error) {
+    console.error('Supabase function error:', error);
+}
+
+const treeData = data || [];
+
+console.log(treeData);
+
+---
+<Layout>
+    <main>
+        <div class="max-w-5xl px-8 py-2 mx-auto">
+            <TreeBase client:load url={id} isEditable title={treeData[0]?.text} rawData={treeData} />
+        </div>
+    </main>
+</Layout>

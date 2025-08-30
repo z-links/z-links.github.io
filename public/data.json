@@ -1,60 +1,191 @@
 [
     {
-       "type": "link",
-       "url": "https://z-quizzes.github.io",
-       "text": "Quizlet"
+        "id": 75,
+        "url": null,
+        "text": "Root Node & User: NULL",
+        "type": "folder",
+        "user": null,
+        "parent": null,
+        "created_at": "2025-08-17T19:06:17.966525+00:00"
     },
     {
-        "type": "category",
-        "text": "Semester 1",
-        "children": [
-            {
-                "type": "link",
-                "text": "PHY-S101 Notes by Ram Janma Sir",
-                "url": "https://nigamsaksham.github.io/UIETScripts/ram_janma_notes_phy_s101.html"
-            },
-            {
-                "type": "link",
-                "text": "MTH-S101 Notes by D.K. Sir",
-                "url": "https://nigamsaksham.github.io/UIETScripts/mth_s101_notes.html"
-            },
-            {
-                "type": "link",
-                "text": "HSS-S101 Notes by Deepti Agarwal Ma'am",
-                "url": "https://nigamsaksham.github.io/UIETScripts/hss-s101_notes.html"
-            },
-            {
-                "type": "link",
-                "text": "ISC-S101 Notes by Hrishabh Sir",
-                "url": "https://nigamsaksham.github.io/UIETScripts/isc-101_notes.html"
-            }
-        ]
+        "id": 76,
+        "url": null,
+        "text": "Root Folder",
+        "type": "folder",
+        "user": null,
+        "parent": 75,
+        "created_at": "2025-08-17T19:06:18.121958+00:00"
     },
     {
-        "type": "category",
-        "text": "Semester 2",
-        "children": [
-            {
-                "type": "link",
-                "text": "PHY-S102 Notes by Prabal Sir",
-                "url": "http://nigamsaksham.github.io/UIETScripts/phy-s101_notes.html"
-            },
-            {
-                "type": "link",
-                "text": "MTH-S102 Notes by D.K. Sir",
-                "url": "http://nigamsaksham.github.io/UIETScripts/mth-s102_notes.html"
-            },
-            {
-                "type": "link",
-                "text": "TCA-S101 Notes by Ramendra Sir",
-                "url": "https://nigamsaksham.github.io/UIETScripts/tca-s101_notes_by_ramendra_sir.html"
-            },
-            {
-                "type": "link",
-                "text": "ESC-S101 Notes by Ompal Sir",
-                "url": "https://nigamsaksham.github.io/UIETScripts/esc-s101_notes.html"
-            }
-        ]
+        "id": 95,
+        "url": "https://resume.com",
+        "text": "My Resume",
+        "type": "link",
+        "user": null,
+        "parent": 76,
+        "created_at": "2025-08-17T19:06:19.489397+00:00"
+    },
+    {
+        "id": 89,
+        "url": null,
+        "text": "Personal",
+        "type": "folder",
+        "user": null,
+        "parent": 76,
+        "created_at": "2025-08-17T19:06:19.110579+00:00"
+    },
+    {
+        "id": 83,
+        "url": null,
+        "text": "Work",
+        "type": "folder",
+        "user": null,
+        "parent": 76,
+        "created_at": "2025-08-17T19:06:18.645902+00:00"
+    },
+    {
+        "id": 77,
+        "url": null,
+        "text": "Social Media",
+        "type": "folder",
+        "user": null,
+        "parent": 76,
+        "created_at": "2025-08-17T19:06:18.203345+00:00"
+    },
+    {
+        "id": 91,
+        "url": null,
+        "text": "Hobbies",
+        "type": "folder",
+        "user": null,
+        "parent": 89,
+        "created_at": "2025-08-17T19:06:19.24153+00:00"
+    },
+    {
+        "id": 90,
+        "url": "https://myblog.com",
+        "text": "Blog",
+        "type": "link",
+        "user": null,
+        "parent": 89,
+        "created_at": "2025-08-17T19:06:19.191689+00:00"
+    },
+    {
+        "id": 88,
+        "url": "https://github.com",
+        "text": "GitHub",
+        "type": "link",
+        "user": null,
+        "parent": 83,
+        "created_at": "2025-08-17T19:06:19.028559+00:00"
+    },
+    {
+        "id": 84,
+        "url": null,
+        "text": "Projects",
+        "type": "folder",
+        "user": null,
+        "parent": 83,
+        "created_at": "2025-08-17T19:06:18.694853+00:00"
+    },
+    {
+        "id": 79,
+        "url": null,
+        "text": "Messaging Apps",
+        "type": "folder",
+        "user": null,
+        "parent": 77,
+        "created_at": "2025-08-17T19:06:18.334334+00:00"
+    },
+    {
+        "id": 78,
+        "url": "https://twitter.com",
+        "text": "Twitter",
+        "type": "link",
+        "user": null,
+        "parent": 77,
+        "created_at": "2025-08-17T19:06:18.281441+00:00"
+    },
+    {
+        "id": 94,
+        "url": "https://guitar.com",
+        "text": "Guitar Tutorials",
+        "type": "link",
+        "user": null,
+        "parent": 91,
+        "created_at": "2025-08-17T19:06:19.415617+00:00"
+    },
+    {
+        "id": 92,
+        "url": null,
+        "text": "Photography",
+        "type": "folder",
+        "user": null,
+        "parent": 91,
+        "created_at": "2025-08-17T19:06:19.288591+00:00"
+    },
+    {
+        "id": 86,
+        "url": null,
+        "text": "Archived Projects",
+        "type": "folder",
+        "user": null,
+        "parent": 84,
+        "created_at": "2025-08-17T19:06:18.882035+00:00"
+    },
+    {
+        "id": 85,
+        "url": "https://project-a.com",
+        "text": "Project A",
+        "type": "link",
+        "user": null,
+        "parent": 84,
+        "created_at": "2025-08-17T19:06:18.780146+00:00"
+    },
+    {
+        "id": 81,
+        "url": null,
+        "text": "Team Chat",
+        "type": "folder",
+        "user": null,
+        "parent": 79,
+        "created_at": "2025-08-17T19:06:18.487853+00:00"
+    },
+    {
+        "id": 80,
+        "url": "https://whatsapp.com",
+        "text": "WhatsApp",
+        "type": "link",
+        "user": null,
+        "parent": 79,
+        "created_at": "2025-08-17T19:06:18.415582+00:00"
+    },
+    {
+        "id": 93,
+        "url": "https://portfolio.com",
+        "text": "Portfolio",
+        "type": "link",
+        "user": null,
+        "parent": 92,
+        "created_at": "2025-08-17T19:06:19.33321+00:00"
+    },
+    {
+        "id": 87,
+        "url": "https://old-project-x.com",
+        "text": "Old Project X",
+        "type": "link",
+        "user": null,
+        "parent": 86,
+        "created_at": "2025-08-17T19:06:18.94402+00:00"
+    },
+    {
+        "id": 82,
+        "url": "https://slack.com",
+        "text": "Slack",
+        "type": "link",
+        "user": null,
+        "parent": 81,
+        "created_at": "2025-08-17T19:06:18.572079+00:00"
     }
-   
 ]

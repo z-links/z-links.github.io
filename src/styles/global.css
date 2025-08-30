@@ -4,6 +4,23 @@ body{
     @apply bg-gray-950 text-gray-100;
 }
 
-.item a, .item .cat-button{
-    @apply flex justify-between items-center p-4 bg-gray-900 min-w-full mb-4 rounded-xl text-[lavender] hover:bg-gray-800 transition-colors text-left cursor-pointer;
+.item details, .item .item-child, .item .cat-button{
+    @apply flex justify-between items-center h-14 bg-gray-900 min-w-full mb-4 rounded-xl text-[lavender] hover:bg-gray-800 transition-colors text-left cursor-pointer;
+}
+
+html { scrollbar-gutter: stable; }
+body { overflow-y: scroll; }
+
+.subCat {
+    transform-origin: center;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    /* Force GPU layer; helps eliminate subtle shrink/flicker in some responsive emulations */
+    transform: translateZ(0);
+}
+
+.edit-controls button{
+    @apply  w-full text-[lavender] p-4 rounded cursor-pointer hover:brightness-120;
 }
