@@ -31,3 +31,6 @@ pnpm-debug.log*
 .env.keys
 .env.local
 .env.*.local
+
+# Local Netlify folder
+.netlify

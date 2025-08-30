@@ -33,7 +33,7 @@ function handleBackdropClick(event) {
             
             <div class="p-6">
                 <div class="flex gap-3">
-                    <input type="text" value={url} readonly class="flex-1 px-4 py-3 border border-zinc-700 rounded-lg bg-zinc-800 text-zinc-100 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent selection:bg-green-500/30" />
+                    <input type="text" value={`https://zlinks.netlify.app/${url}`} readonly class="flex-1 px-4 py-3 border border-zinc-700 rounded-lg bg-zinc-800 text-zinc-100 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent selection:bg-green-500/30" />
                     <button onclick={copyToClipboard} class="px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-lg hover:from-green-700 hover:to-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm font-medium transition-all duration-200 shadow-lg hover:shadow-xl">
                         Copy
                     </button>

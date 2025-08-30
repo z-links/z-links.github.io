@@ -12,7 +12,7 @@
     void login.user;
 
     untrack(() => {
-      if (login.user !== null) {
+      if (login.user !== null && login.authFromMainButton) {
         isLoadingLinks = true;
 
         (async () => {

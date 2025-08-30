@@ -6,10 +6,11 @@ class Login {
     user = $state<User | null | string>(null);
     wannaLogin = $state(true);
     warningModalOpen = $state(false);
+    authFromMainButton: boolean = $state(false);
 
     constructor() {
         supabase.auth.getSession().then(({ data }) => {
-            console.log("inside state")
+            // console.log("inside state")
             if (data.session?.user.id) 
                 this.user = data.session?.user.id;
         });

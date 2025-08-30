@@ -3,6 +3,7 @@
 
   function handleLogin() {
     login.warningModalOpen = false;
+    login.setIsModalOpen(true);
   }
 
   function handleContinueWithoutLogin() {
