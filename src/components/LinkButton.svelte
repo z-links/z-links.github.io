@@ -2,6 +2,12 @@
   import type { Item, EditMethods  } from "./types";
   const { item, isEditable, editMethods }: { item: Item; isEditable: boolean; editMethods: EditMethods } = $props();
 
+  function normalizeUrl(url: string | undefined): string {
+  if (url && /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(url)) {
+    return url;
+  }
+  return '//' + url;
+}
 </script>
 
 {#if isEditable}
@@ -52,14 +58,22 @@
             type="url"
             class=" mt-1 w-full rounded bg-transparent border-2 border-green-500 px-3 py-2 outline-none"
             placeholder="https://example.com"
-            bind:value={item.url}
+            onblur={(e) => {
+              const newUrl = (e.currentTarget as HTMLInputElement).value;
+              if (newUrl !== item.url) {
+                item.url = newUrl;
+                if (editMethods && editMethods.updateItem) {
+                  editMethods.updateItem(item);
+                }
+              }
+            }}
           />
         </div>
       </div>
     </div>
   </div>
 {:else}
-  <a href={item.url} class="item-child p-2">
+  <a href={normalizeUrl(item.url)} target="_blank" rel="noopener noreferrer" class="item-child p-2">
     <h2 class="">{item.text}</h2>
     <h3
       class="mx-3 text-green-400 text-sm font-semibold text-nowrap [text-shadow:0_0_8px_#4ade80]"
