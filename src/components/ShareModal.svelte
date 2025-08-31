@@ -1,7 +1,6 @@
 <script>
 let { url, isOpen = $bindable(false) } = $props();
 
-isOpen = true
 function closeModal() {
     isOpen = false;
     window.location.href = '/';
