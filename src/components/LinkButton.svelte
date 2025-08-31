@@ -1,13 +1,17 @@
 <script lang="ts">
-  import type { Item, EditMethods  } from "./types";
-  const { item, isEditable, editMethods }: { item: Item; isEditable: boolean; editMethods: EditMethods } = $props();
+  import type { Item, EditMethods } from "./types";
+  const {
+    item,
+    isEditable,
+    editMethods,
+  }: { item: Item; isEditable: boolean; editMethods: EditMethods } = $props();
 
   function normalizeUrl(url: string | undefined): string {
-  if (url && /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(url)) {
-    return url;
+    if (url && /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(url)) {
+      return url;
+    }
+    return "//" + url;
   }
-  return '//' + url;
-}
 </script>
 
 {#if isEditable}
@@ -16,10 +20,7 @@
     tabindex="0"
     class="button w-full flex flex-col p-2 justify-center min-h-14 mb-4 bg-gray-900 rounded-xl text-[lavender] hover:bg-gray-800 transition-colors text-left cursor-pointer"
   >
-    <div
-      class="flex justify-between items-center"
-      aria-label="Edit link"
-    >
+    <div class="flex justify-between items-center" aria-label="Edit link">
       <h2
         class="block w-full outline-0 relative text-left"
         contenteditable={true}
@@ -73,7 +74,12 @@
     </div>
   </div>
 {:else}
-  <a href={normalizeUrl(item.url)} target="_blank" rel="noopener noreferrer" class="item-child p-2">
+  <a
+    href={normalizeUrl(item.url)}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="item-child p-2"
+  >
     <h2 class="">{item.text}</h2>
     <h3
       class="mx-3 text-green-400 text-sm font-semibold text-nowrap [text-shadow:0_0_8px_#4ade80]"
@@ -97,7 +103,6 @@
   .grid-collapse > div {
     overflow: hidden;
   }
-  
 
   /* Radiate */
 
