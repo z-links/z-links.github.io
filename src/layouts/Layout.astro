@@ -16,7 +16,7 @@ import LoginWarning from "../components/LoginWarning.svelte";
   </head>
   <body class="overflow-x-hidden">
     <header
-      class="relative px-8 w-full max-w-5xl mx-auto grid grid-cols-[1fr_max-content_1fr] place-content-center"
+      class="relative px-8 w-full h-20 max-w-5xl mx-auto grid grid-cols-[1fr_max-content_1fr] place-content-center"
     >
       <a
         href="/"
@@ -34,6 +34,25 @@ import LoginWarning from "../components/LoginWarning.svelte";
     <LoginModal client:load />
     <DeleteModal client:load />
     <LoginWarning client:load />
-    <slot />
+    <div class="min-h-[calc(100vh-10rem)]">
+      <slot />
+    </div>
+    <footer class="w-full h-20 bg-gray-950 border-t border-purple-700/30 ">
+      <div class="max-w-5xl mx-auto px-8 h-full flex items-center">
+      <div class="flex items-center justify-between w-full">
+      <p class="text-lavender/60 text-xs">
+      © 2024 Z-Links. All rights reserved.
+      </p>
+      <a
+      href="https://www.buymeacoffee.com/msabaq"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+      >
+      ☕ Buy me a coffee
+      </a>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -39,10 +39,10 @@
 
 
 
-<div class="relative min-w-full">
+<div class="relative grid min-w-full">
 
   {#if isEditable}
-    <div class="mb-6">
+    <div class="mb-6 col-start-1 row-start-1">
       <input
       bind:value={title}
       type="text"
@@ -54,7 +54,7 @@
 
   {#key prevCats}
     <div
-      class="subCat absolute w-full"
+      class="subCat col-start-1 row-start-2 w-full"
       in:fly={{ x: isGoingBack ? -350 : 350, duration: 300 }}
       out:fly={{ x: isGoingBack ? 350 : -350, duration: 300 }}
     >
