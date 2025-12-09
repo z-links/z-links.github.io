@@ -2,7 +2,7 @@
     {
        "type": "link",
        "url": "https://z-quizzes.github.io",
-       "text": "Quizlet"
+       "text": "Quizlet(for PHY-S101 and PHY-S102)"
     },
     {
         "type": "category",
@@ -53,6 +53,37 @@
                 "type": "link",
                 "text": "ESC-S101 Notes by Ompal Sir",
                 "url": "https://nigamsaksham.github.io/UIETScripts/esc-s101_notes.html"
+            }
+        ]
+    },
+    {
+        "type": "category",
+        "text": "Semester 3",
+        "children": [
+            {
+                "type": "link",
+                "text": "CSE-S101 Notes by Kamalkant Sir",
+                "url": "http://nigamsaksham.github.io/UIETScripts/cse-s201_notes.html"
+            },
+            {
+                "type": "link",
+                "text": "CSE-S202 Notes by Ramnayan Sir",
+                "url": "http://nigamsaksham.github.io/UIETScripts/cse-s202_notes.html"
+            },
+            {
+                "type": "link",
+                "text": "MTH-S201 Notes by Yogesh Sir",
+                "url": "https://nigamsaksham.github.io/UIETScripts/mth-s201_notes.html"
+            },
+            {
+                "type": "link",
+                "text": "UHV-S201 Notes by Bhanu Sir and Anil Sir",
+                "url": "https://nigamsaksham.github.io/UIETScripts/uhv-s201_notes.html"
+            },
+            {
+                "type": "link",
+                "text": "HSS-S201 Notes by Deepti Ma'am",
+                "url": "https://nigamsaksham.github.io/UIETScripts/hss-s201_notes.html"
             }
         ]
     }
