@@ -86,6 +86,32 @@
                 "url": "https://nigamsaksham.github.io/UIETScripts/hss-s201_notes.html"
             }
         ]
+    },
+    {
+        "type": "category",
+        "text": "Semester 4",
+        "children": [
+            {
+                "type": "link",
+                "text": " MTH-S504 Notes by D.K. Sir",
+                "url": "http://nigamsaksham.github.io/UIETScripts/mth-s504_notes.html"
+            },
+            {
+                "type": "link",
+                "text": "MTH-S301 Notes by Varsha Mam",
+                "url": "http://nigamsaksham.github.io/UIETScripts/mth-s301_notes.html"
+            },
+            {
+                "type": "link",
+                "text": "CSE-S203 Notes by Pragya Mam",
+                "url": "https://nigamsaksham.github.io/UIETScripts/cse-s203.html"
+            },
+            {
+                "type": "link",
+                "text": "CSE-S205 Notes by Gargi Mam",
+                "url": "https://nigamsaksham.github.io/UIETScripts/cse-s205_notes.html"
+            }
+        ]
     }
    
 ]
